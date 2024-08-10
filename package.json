@@ -1,0 +1,60 @@
+{
+  "name": "@sutando/schema-inspector",
+  "version": "0.0.1",
+  "description": "Utility for extracting information about existing database schema",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsup ./src/index.ts --format cjs,esm --minify --target es2022",
+    "test": "jest",
+    "test:bun": "bun test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sutandojs/schema-inspector.git"
+  },
+  "keywords": [
+    "sutando",
+    "sql",
+    "schema",
+    "mysql",
+    "postgresql",
+    "sqlite3",
+    "javascript"
+  ],
+  "author": "Kidd Yu <yuhongyangchina@gmail.com> (https://github.com/kiddyuchina)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.1.0",
+    "better-sqlite3": "^11.1.2",
+    "jest": "^29.7.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.0",
+    "pg": "^8.12.0",
+    "sqlite3": "^5.1.7",
+    "sutando": "^1.6.1",
+    "ts-jest": "^29.2.4",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  }
+}
