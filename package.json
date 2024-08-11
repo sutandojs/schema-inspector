@@ -1,6 +1,6 @@
 {
   "name": "@sutando/schema-inspector",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Utility for extracting information about existing database schema",
   "main": "./dist/index.js",
   "scripts": {
