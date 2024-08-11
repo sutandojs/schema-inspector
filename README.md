@@ -6,7 +6,7 @@ This library currently supports Postgres, MySQL, MS SQL, SQLite, and OracleDB. W
 
 ## Installation
 
-Install the package through NPM or Yarn:
+Install the package through npm or pnpm:
 
 ```
 npm install @sutando/schema-inspector
@@ -18,7 +18,7 @@ pnpm add @sutando/schema-inspector
 
 ## Usage
 
-The package is initialized by passing it an instance of QueryBuilder:
+The package is initialized by passing it an instance of sutando QueryBuilder:
 
 ```ts
 import { sutando } from 'sutando';
@@ -265,26 +265,6 @@ inspector.withSchema('my-schema');
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
-### Tests
-
-First start docker containers:
-
-```shell
-$ docker-compose up -d
-```
-
-Then run tests:
-
-```shell
-$ npm test
-```
-
-Standard mocha filter (grep) can be used:
-
-```shell
-$ npm test -- -g '.tableInfo'
-```
 
 ## Acknowledgements
 

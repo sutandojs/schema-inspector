@@ -5,8 +5,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsup ./src/index.ts --format cjs,esm --minify --dts --target es2022",
-    "test": "jest",
-    "test:bun": "bun test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
