@@ -4,7 +4,7 @@
   "description": "Utility for extracting information about existing database schema",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsup ./src/index.ts --format cjs,esm --minify --target es2022",
+    "build": "tsup ./src/index.ts --format cjs,esm --minify --dts --target es2022",
     "test": "jest",
     "test:bun": "bun test"
   },
